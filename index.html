@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banappanakatti Ganesh — Portfolio</title>
+  <meta name="description" content="Portfolio of Banappanakatti Ganesh — Information Science student at VVCE Mysore. I build tech that solves real-world problems." />
+  <meta name="keywords" content="Ganesh, Banappanakatti, portfolio, developer, student, Python, React, IoT, KrishiConnect" />
+  <meta property="og:title" content="Banappanakatti Ganesh — Portfolio" />
+  <meta property="og:description" content="I build tech that solves real-world problems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Bubble Cursor Canvas -->
+  <canvas id="bubble-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">BG</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="hero-first">Banappanakatti</span>
+        <span class="hero-last">Ganesh</span>
+      </h1>
+      <p class="hero-tagline">"I build tech that solves real-world problems"</p>
+      <p class="hero-sub">Information Science Student · Mysore, Karnataka</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="hero-cta-contact">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/bganesh-05" target="_blank" rel="noopener noreferrer" class="social-link" id="social-github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/banappanakatti-ganesh-70119132b" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:bganeshbganesh2424@gmail.com" class="social-link" id="social-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">Hi! I'm <strong>Ganesh</strong>, a passionate Information Science student at VVCE Mysore with a love for building technology that makes a real difference.</p>
+          <p>I specialize in full-stack development, AI integration, and IoT systems. My flagship project <strong>KrishiConnect</strong> — an AI-powered farming assistant — reflects my belief that technology should empower the people who need it most.</p>
+          <p>When I'm not coding, I'm exploring new tech stacks, contributing to open-source, and sharpening my problem-solving skills through competitive challenges.</p>
+          <div class="about-stats">
+            <div class="stat-card" id="stat-gpa">
+              <span class="stat-value">8.28</span>
+              <span class="stat-label">Current GPA</span>
+            </div>
+            <div class="stat-card" id="stat-puc">
+              <span class="stat-value">94.33%</span>
+              <span class="stat-label">PUC Score</span>
+            </div>
+            <div class="stat-card" id="stat-10th">
+              <span class="stat-value">93.92%</span>
+              <span class="stat-label">10th Score</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">BG</span>
+            </div>
+            <div class="avatar-orbit">
+              <div class="orbit-icon" style="--deg:0deg">🐍</div>
+              <div class="orbit-icon" style="--deg:60deg">⚛️</div>
+              <div class="orbit-icon" style="--deg:120deg">☕</div>
+              <div class="orbit-icon" style="--deg:180deg">🤖</div>
+              <div class="orbit-icon" style="--deg:240deg">🌐</div>
+              <div class="orbit-icon" style="--deg:300deg">🔌</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" id="skill-programming">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">C</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-web">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">React</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Tailwind</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-databases">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">SQL</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-tools">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Figma</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-datascience">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📊</span>
+            <h3>Data Science</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Python DS</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-iot">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔌</span>
+            <h3>IoT</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Arduino</span>
+            <span class="pill">IoT Systems</span>
+          </div>
+        </div>
+
+        <div class="skill-category skill-soft" id="skill-soft">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤝</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-soft">Leadership</span>
+            <span class="pill pill-soft">Communication</span>
+            <span class="pill pill-soft">Teamwork</span>
+            <span class="pill pill-soft">Problem Solving</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card featured" id="project-krishiconnect">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="tag tag-ai">AI</span>
+              <span class="tag tag-web">Web</span>
+              <span class="tag tag-env">Environment</span>
+            </div>
+            <div class="project-status">
+              <span class="status-dot status-progress"></span>
+              In Progress
+            </div>
+          </div>
+          <div class="project-icon-wrap">
+            <span class="project-icon">🌾</span>
+          </div>
+          <h3 class="project-title">KrishiConnect</h3>
+          <p class="project-desc">An AI-powered farming assistant providing real-time weather insights, market price tracking, crop disease detection, and multilingual advisory support — built for Indian farmers who need tech that works for them.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">IoT</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/bganesh-05/krishiconnect" target="_blank" rel="noopener noreferrer" class="project-link" id="krishiconnect-github-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Placeholder card for future projects -->
+        <article class="project-card placeholder-card" id="project-coming-soon">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon">🚀</span>
+            <p>More projects coming soon…</p>
+            <a href="https://github.com/bganesh-05" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="github-all-link">See all on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" id="edu-be">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2024 – 2028</span>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <h3 class="timeline-title">B.E. Information Science</h3>
+            <p class="timeline-place">Vidyavardhaka College of Engineering (VVCE), Mysore</p>
+            <div class="timeline-score">
+              <span class="score-label">GPA</span>
+              <span class="score-value">8.28 / 10</span>
+              <div class="score-bar"><div class="score-fill" style="width: 82.8%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-puc">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">Pre-University</span>
+            </div>
+            <h3 class="timeline-title">PUC (11th & 12th)</h3>
+            <p class="timeline-place">Karnataka State Board</p>
+            <div class="timeline-score">
+              <span class="score-label">Score</span>
+              <span class="score-value">94.33%</span>
+              <div class="score-bar"><div class="score-fill" style="width: 94.33%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-10th">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">Secondary</span>
+            </div>
+            <h3 class="timeline-title">10th Standard (SSLC)</h3>
+            <p class="timeline-place">Karnataka State Board</p>
+            <div class="timeline-score">
+              <span class="score-label">Score</span>
+              <span class="score-value">93.92%</span>
+              <div class="score-bar"><div class="score-fill" style="width: 93.92%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements & Certifications</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card" id="achievement-hackathon">
+          <div class="achievement-icon-wrap">
+            <span class="achievement-icon">🏆</span>
+          </div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">Hack-AI-Thon</h3>
+            <p class="achievement-org">VVCE, Mysore</p>
+            <p class="achievement-desc">Participated and earned certification in the AI hackathon organized by Vidyavardhaka College of Engineering — showcasing innovative AI-based solutions.</p>
+            <span class="achievement-type">Certification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind, an opportunity to share, or just want to say hi? My inbox is always open.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <a href="mailto:bganeshbganesh2424@gmail.com" class="contact-item" id="contact-email">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">bganeshbganesh2424@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/banappanakatti-ganesh-70119132b" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin">
+            <div class="contact-item-icon">💼</div>
+            <div>
+              <span class="contact-item-label">LinkedIn</span>
+              <span class="contact-item-value">banappanakatti-ganesh</span>
+            </div>
+          </a>
+          <a href="https://github.com/bganesh-05" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github">
+            <div class="contact-item-icon">💻</div>
+            <div>
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-value">bganesh-05</span>
+            </div>
+          </a>
+          <div class="contact-item no-link" id="contact-location">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <span class="contact-item-label">Location</span>
+              <span class="contact-item-value">Mysore, Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name" class="form-label">Your Name</label>
+            <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="form-email" class="form-label">Your Email</label>
+            <input type="email" id="form-email" name="email" class="form-input" placeholder="rahul@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="form-subject" class="form-label">Subject</label>
+            <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Project collaboration, Opportunity…" />
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Tell me about your idea or opportunity…" required rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-status" id="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Banappanakatti Ganesh · Built with passion 🌊</p>
+        <div class="footer-links">
+          <a href="https://github.com/bganesh-05" target="_blank" rel="noopener noreferrer" id="footer-github">GitHub</a>
+          <a href="https://www.linkedin.com/in/banappanakatti-ganesh-70119132b" target="_blank" rel="noopener noreferrer" id="footer-linkedin">LinkedIn</a>
+          <a href="mailto:bganeshbganesh2424@gmail.com" id="footer-email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
